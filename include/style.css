@@ -539,20 +539,28 @@ a{
     margin-top: 60px;
     pointer-events: none;
 }
-.advisor-info{
+.advisor-info,.alum_info{
     width:100%;
-    
     margin: 50px auto;
 }
 .advisor-info p{
     margin: 20px;
 }
-.foreign-advisor{
+.foreign-advisor,.alum_con{
     width:20%;
     margin: 0 auto;
     height: 400px;  
     box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.3);
     text-align: center;
+}
+.alum_con{
+    height: 250px;
+}
+.alum_info p{
+    margin-top: 70px;
+}
+.alum_con .ad-img-con img{
+    margin-top: 30px;
 }
 .relation-head,.alumni-head{
     font-size: 40px;
@@ -561,6 +569,7 @@ a{
     position: relative;
     margin-top: 50px;
 }
+/*
 .alum_con{
     background: #ccc;
     padding: 20px;
@@ -578,6 +587,7 @@ a{
     border-radius: 50%;
     pointer-events: none;
 }
+*/
 .team{
     width: 100%;
     overflow-x: hidden;
@@ -617,6 +627,7 @@ a{
 .team-head-info p{
     text-align: justify;
     color:white;
+    line-height: 30px;
 }
 .member-btn{
     padding: 10px;
@@ -664,8 +675,10 @@ a{
 .domain_con{
     padding:12px 0;
     margin: 0 35px;
+    height: 100%;
 }
 .domain_members_con{
+    min-height: 100%;
     margin-top:10px;
     padding: 10px 0;
     background: rgba(0,0,0,0.8);
@@ -679,15 +692,20 @@ a{
         opacity: 1;
     }
 }
-.domain_member{
-    display: flex;
-    flex-wrap: wrap;
+ .domain_member{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
     text-align: center;
 }
 .domain_member div{
-    flex:1;
     margin: 10px;
     border:1px solid white;
+}
+.domain_member div p{
+    padding: 6px 0;
+}
+.mech .domain_member{
+    grid-template-columns: repeat(2,auto);
 }
 .domain_head p{
     background: white;
@@ -824,7 +842,7 @@ a{
     }
 }
 @media screen and (max-width:1200px){
-    .foreign-advisor{
+    .foreign-advisor,.alum_con{
         width:26%;
     }
     .team-con,.team-member-con{
@@ -846,7 +864,7 @@ a{
     .advisor{
         width:37%;
     }
-    .foreign-advisor{
+    .foreign-advisor,.alum_con{
         width:34%;
     }
 }
@@ -894,7 +912,7 @@ a{
     .advisor{
         width:40%;
     }
-    .foreign-advisor{
+    .foreign-advisor,.alum_con{
         width:40%;
     }
     .team-con,.team-member-con{
@@ -977,6 +995,9 @@ a{
         width:50%;
         height:360px;
     }
+    .alum_con{
+        width: 50%;
+    }
     .imgCon{
         width:70%
     }
@@ -985,6 +1006,9 @@ a{
     }
     .footer p{
         font-size: 12px;
+    }
+    .domain_member{
+        grid-template-columns: repeat(2,auto);
     }
 }
 
@@ -1020,7 +1044,7 @@ a{
     .advisor{
         width: 70%;
     }
-    .foreign-advisor{
+    .foreign-advisor,.alum_con{
         width:65%;
     }
     .about-head,.achi-head,.advisor-head,.team-head,.spons-head,.relation-head,.alumni-head{
@@ -1029,5 +1053,16 @@ a{
     .spons-con img{
         margin: 10px 20px;
         width:17%;
+    }
+    .domain_member{
+        grid-template-columns: repeat(1,auto);
+    }
+    .embedded .domain_head p , .cv .domain_head p{
+        font-size:13px;
+    }
+}
+@media screen and (max-width:322px){
+    .embedded .domain_head p , .cv .domain_head p{
+        font-size:11px;
     }
 }

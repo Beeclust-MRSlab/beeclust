@@ -413,34 +413,34 @@ a{
     transition: 0.5s ease all;
 }
 .pro-img-con1{
-	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("logiswarm.jpeg");
+	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("sprinter.jpeg");
 	background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 	transition:all 0.5s ease;
 }
 .pro-img-con2{
-	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("logiswarm.jpeg");
+	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("logiswarm.jpg");
 	background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 	transition:all 0.5s ease;
 }
 .pro-img-con3{
-	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("micro.jpeg");
+	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("micromouse.jpg");
 	background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 	transition:all 0.5s ease;
 }
 .pro-con:hover .pro-img-con1{
-    background-image:url("logiswarm.jpeg");
+    background-image:url("sprinter.jpeg");
 }
 .pro-con:hover .pro-img-con2{
-    background-image:url("logiswarm.jpeg");
+    background-image:url("logiswarm.jpg");
 }
 .pro-con:hover .pro-img-con3{
-	background-image:url("micro.jpeg");
+	background-image:url("micromouse.jpg");
 }
 .pro-info{
     background: #FCD30B;
@@ -694,18 +694,11 @@ a{
 }
  .domain_member{
     display: grid;
-    grid-template-columns: repeat(3,auto);
     text-align: center;
 }
 .domain_member div{
     margin: 10px;
     border:1px solid white;
-}
-.domain_member div p{
-    padding: 6px 0;
-}
-.mech .domain_member{
-    grid-template-columns: repeat(2,auto);
 }
 .domain_head p{
     background: white;
@@ -730,8 +723,8 @@ a{
         width:0;
     }
 }
-.robotics{
-    background-image: linear-gradient(rgba(0,0,0,0.5) , rgba(0,0,0,0.5)),url("robo.jpg");
+.hardware{
+    background-image: linear-gradient(rgba(0,0,0,0.5) , rgba(0,0,0,0.5)),url("hardware.jpg");
 }
 .cv{
     background-image: linear-gradient(rgba(0,0,0,0.5) , rgba(0,0,0,0.5)),url("cv.jpg");
@@ -744,6 +737,9 @@ a{
 }
 .pr{
     background-image: linear-gradient(rgba(0,0,0,0.5) , rgba(0,0,0,0.5)),url("pr.jpg");
+}
+.robo{
+    background-image: linear-gradient(rgba(0,0,0,0.5) , rgba(0,0,0,0.5)),url("robo.jpg");
 }
 .next,.prev{
     padding: 0 5px;
@@ -1007,9 +1003,6 @@ a{
     .footer p{
         font-size: 12px;
     }
-    .domain_member{
-        grid-template-columns: repeat(2,auto);
-    }
 }
 
 @media screen and (max-width:500px){
@@ -1021,6 +1014,9 @@ a{
     }
     .team-head-info{
         width: 80%;
+    }
+    .embedded .domain_head p , .cv .domain_head p{
+        font-size:13px;
     }
 }
 
@@ -1053,12 +1049,6 @@ a{
     .spons-con img{
         margin: 10px 20px;
         width:17%;
-    }
-    .domain_member{
-        grid-template-columns: repeat(1,auto);
-    }
-    .embedded .domain_head p , .cv .domain_head p{
-        font-size:13px;
     }
 }
 @media screen and (max-width:322px){

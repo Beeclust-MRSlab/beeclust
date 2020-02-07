@@ -11,7 +11,7 @@ let h,currenIndex=0
     display_none()
     domain[0].style.display = "block"
     set_height(0)
-    navbar.style.display === "none"
+    navbar.style.display = "none"
 }
 
 function display_none(){

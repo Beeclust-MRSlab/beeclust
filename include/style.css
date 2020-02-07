@@ -226,7 +226,7 @@ a{
 .about{
     background: #ffc107;
     position: relative;
-    height: 500px;
+    height: 89vh;
 }
 .logo-for-about{
     pointer-events:none;
@@ -270,6 +270,7 @@ a{
 .slideshow{
 	margin:20px auto;
     width:100%;
+    min-height: 70vh;
 }
 .slide{
     display:flex;
@@ -289,7 +290,7 @@ a{
     overflow-x: hidden;
 }
 .imgCon img{
-	width:100%;
+	width:80%;
 	height:auto;
 }
 
@@ -588,176 +589,6 @@ a{
     pointer-events: none;
 }
 */
-.team{
-    width: 100%;
-    overflow-x: hidden;
-}
-.team-con{
-    width: 50%;
-    min-height: 300px;
-    background-image: url("pattern2.png");
-    background-size: cover;
-    background-position: center;
-    margin: 0px auto;
-    display: flex;
-    box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.3);
-}
-.team-head-con{
-    width:40%;
-    min-height:100%;
-    background: #938400;
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    
-}
-.team-head-img{
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.3);
-    margin: 10px auto;
-    pointer-events: none;
-}
-.team-head-info{
-    width:50%;
-    margin: 20px auto;
-}
-.team-head-info p{
-    text-align: justify;
-    color:white;
-    line-height: 30px;
-}
-.member-btn{
-    padding: 10px;
-    border: 2px solid white;
-    background: inherit;
-    color:white;
-    font-weight: bold;
-    cursor: pointer;
-    font-family: 'Montserrat', sans-serif;
-
-}
-.member-btn:hover{
-    color:black;
-    background: white;
-}
-.member-btn:focus{
-    outline:none;
-}
-.team-member-con{
-    width: 50%;
-    margin: 0 auto;
-    overflow: hidden;
-    display: none;
-}
-@keyframes mem-reveal{
-    0%{
-        transform : translateY(-100%);
-    }
-    100%{
-        transform : translateY(0);
-    }
-}
-.team-wrapper{
-    transform : translateY(-100%);
-    animation: mem-reveal 0.5s ease forwards;
-    position: relative;
-}
-.domain{
-    min-height:300px;
-    width:100%;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.domain_con{
-    padding:12px 0;
-    margin: 0 35px;
-    height: 100%;
-}
-.domain_members_con{
-    min-height: 100%;
-    margin-top:10px;
-    padding: 10px 0;
-    background: rgba(0,0,0,0.8);
-    color:white;
-    opacity: 0;
-    animation: reveal_mem 1s ease forwards;
-    animation-delay: 0.7s;
-}
-@keyframes reveal_mem{
-    to{
-        opacity: 1;
-    }
-}
- .domain_member{
-    display: grid;
-    text-align: center;
-}
-.domain_member div{
-    margin: 10px;
-    border:1px solid white;
-}
-.domain_head p{
-    background: white;
-    display: inline;
-    padding: 5px;
-    font-size: 20px;
-    position: relative;
-}
-.domain_head p::before{
-    content: " ";
-    position: absolute;
-    width:100%;
-    height: 100%;
-    background: black;
-    top:0;
-    left:0;
-    animation: head_reveal 0.8s ease forwards;
-    animation-delay: 0.4s;
-}
-@keyframes head_reveal{
-    to{
-        width:0;
-    }
-}
-.hardware{
-    background-image: linear-gradient(rgba(0,0,0,0.5) , rgba(0,0,0,0.5)),url("hardware.jpg");
-}
-.cv{
-    background-image: linear-gradient(rgba(0,0,0,0.5) , rgba(0,0,0,0.5)),url("cv.jpg");
-}
-.embedded{
-    background-image: linear-gradient(rgba(0,0,0,0.5) , rgba(0,0,0,0.5)),url("embed.jpg");
-}
-.mech{
-    background-image: linear-gradient(rgba(0,0,0,0.5) , rgba(0,0,0,0.5)),url("mech.jpg");
-}
-.pr{
-    background-image: linear-gradient(rgba(0,0,0,0.5) , rgba(0,0,0,0.5)),url("pr.jpg");
-}
-.robo{
-    background-image: linear-gradient(rgba(0,0,0,0.5) , rgba(0,0,0,0.5)),url("robo.jpg");
-}
-.next,.prev{
-    padding: 0 5px;
-    position: absolute;
-    z-index: 10000;
-    top:40%;
-}
-.next{
-    right: 0;
-}
-.next button, .prev button{
-    background: none;
-    border:none;
-    cursor: pointer;
-}
-.next button:focus , .prev button:focus{
-    outline: none;
-}
 .sponsors{
     margin-top: 50px;
     width:100%;

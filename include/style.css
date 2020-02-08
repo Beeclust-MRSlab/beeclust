@@ -543,6 +543,7 @@ a{
 .advisor-info,.alum_info{
     width:100%;
     margin: 50px auto;
+    margin-bottom: 0;
 }
 .advisor-info p{
     margin: 20px;
@@ -554,14 +555,38 @@ a{
     box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.3);
     text-align: center;
 }
+.alumni{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
 .alum_con{
     height: 250px;
+    width:25%;
+    margin: 10px;
 }
-.alum_info p{
+.alum_info p:nth-child(1){
     margin-top: 70px;
 }
 .alum_con .ad-img-con img{
     margin-top: 30px;
+}
+.ad-img-con img{
+    pointer-events: none;
+}
+.ad_social ul{
+    list-style: none;
+}
+.ad_social li{
+    display: inline-block;
+    background: #FCD30B;
+    padding: 5px 7px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+.ad_social a{
+    color: black;
 }
 .relation-head,.alumni-head{
     font-size: 40px;
@@ -570,25 +595,6 @@ a{
     position: relative;
     margin-top: 50px;
 }
-/*
-.alum_con{
-    background: #ccc;
-    padding: 20px;
-    display: flex;
-    text-align: center;
-    flex-wrap: wrap;
-}
-.alumni{
-    flex:1;
-    margin: 10px 0;
-}
-.alumni img{
-    height:150px;
-    width:150px;
-    border-radius: 50%;
-    pointer-events: none;
-}
-*/
 .sponsors{
     margin-top: 50px;
     width:100%;
